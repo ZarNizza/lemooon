@@ -1,733 +1,811 @@
 <html lang="ru">
+  <head>
+    <link rel="icon" href="/icons/Sunny_purple-150x150.png" sizes="32x32" />
+    <link rel="icon" href="/icons/Sunny_purple.png" sizes="192x192" />
+    <title>
+      Владимир Матвеев - разработчик - REACT JS, TypeScript, GIT, Jest (+CSS
+      +HTML +PHP +MySQL) | Самара
+    </title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Владимир Матвеев | разработчик REACT JS, TypeScript +GIT +Jest +CSS +HTML +PHP +MySQL | Самара"
+    />
+    <meta
+      name="keywords"
+      content="REACT, JS, JavaScript, TypeScript, GIT, Jest, CSS, HTML, PHP, MySQL"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Владимир Матвеев - разработчик - REACT JS, TypeScript, GIT, Jest (+CSS +HTML +PHP +MySQL) | Самара"
+    />
+    <meta
+      property="og:description"
+      content="Владимир Матвеев | разработчик REACT JS, TypeScript +GIT +Jest +CSS +HTML +PHP +MySQL | Самара"
+    />
+    <meta property="og:url" content="https://lemooon.ru" />
+    <meta property="og:site_name" content="LeMoooN.ru" />
+    <meta property="og:image" content="div/logo_up.png" />
+    <meta name="geo.position" content="53.20150196732136,50.141382192842585" />
+    <meta name="geo.placename" content="Russia, Samara" />
+    <meta name="geo.region" content="RU-SAM" />
 
-<head>
-  <link rel="icon" href="/icons/Sunny_purple-150x150.png" sizes="32x32" />
-  <link rel="icon" href="/icons/Sunny_purple.png" sizes="192x192" />
-  <title>
-    Владимир Матвеев - разработчик - REACT JS, TypeScript, GIT, Jest (+CSS
-    +HTML +PHP +MySQL) | Самара
-  </title>
-  <meta charset="utf-8" />
-  <meta name="description"
-    content="Владимир Матвеев | разработчик REACT JS, TypeScript +GIT +Jest +CSS +HTML +PHP +MySQL = быстрые лёгкие эффективные приложения и сайты | Самара" />
-  <meta name="keywords" content="REACT, JS, JavaScript, TypeScript, GIT, Jest, CSS, HTML, PHP, MySQL" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title"
-    content="Владимир Матвеев - разработчик - REACT JS, TypeScript, GIT, Jest (+CSS +HTML +PHP +MySQL) | Самара" />
-  <meta property="og:description"
-    content="Владимир Матвеев | разработчик REACT JS, TypeScript +GIT +Jest +CSS +HTML +PHP +MySQL = быстрые лёгкие эффективные приложения и сайты | Самара" />
-  <meta property="og:url" content="https://lemooon.ru" />
-  <meta property="og:site_name" content="LeMoooN.ru" />
-  <meta property="og:image" content="div/logo_up.png" />
-  <meta name="geo.position" content="53.20150196732136,50.141382192842585" />
-  <meta name="geo.placename" content="Russia, Samara" />
-  <meta name="geo.region" content="RU-SAM" />
-
-  <style>
-    /* cyrillic */
-    @font-face {
-      font-family: "Comfortaa";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Comfortaa Regular"), local("Comfortaa-Regular"),
-        url(/fonts/Comfortaa_cyr_400.woff2) format("woff2");
-      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* cyrillic */
-    @font-face {
-      font-family: "Comfortaa";
-      font-style: normal;
-      font-weight: 700;
-      src: local("Comfortaa Bold"), local("Comfortaa-Bold"),
-        url(/fonts/Comfortaa_cyr_700.woff2) format("woff2");
-      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* latin */
-    @font-face {
-      font-family: "Comfortaa";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Comfortaa Regular"), local("Comfortaa-Regular"),
-        url(/fonts/Comfortaa_lat_400.woff2) format("woff2");
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
-        U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-    }
-
-    /* latin */
-    @font-face {
-      font-family: "Comfortaa";
-      font-style: normal;
-      font-weight: 700;
-      src: local("Comfortaa Bold"), local("Comfortaa-Bold"),
-        url(/fonts/Comfortaa_lat_700.woff2) format("woff2");
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
-        U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-    }
-
-    .pulse {
-      animation-name: pulse;
-      -webkit-animation-name: pulse;
-      animation-duration: 7s;
-      -webkit-animation-duration: 7s;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: ease;
-      animation-timing-function: ease;
-      max-width: 450px;
-      margin: auto;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 1;
+    <style>
+      /* cyrillic */
+      @font-face {
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Comfortaa Regular"), local("Comfortaa-Regular"),
+          url(/fonts/Comfortaa_cyr_400.woff2) format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
       }
 
-      80% {
-        transform: scale(1);
-        opacity: 1;
+      /* cyrillic */
+      @font-face {
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Comfortaa Bold"), local("Comfortaa-Bold"),
+          url(/fonts/Comfortaa_cyr_700.woff2) format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
       }
 
-      85% {
-        transform: scale(0.95);
-        opacity: 1;
+      /* latin */
+      @font-face {
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Comfortaa Regular"), local("Comfortaa-Regular"),
+          url(/fonts/Comfortaa_lat_400.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
       }
 
-      90% {
-        transform: scale(1);
-        opacity: 1;
+      /* latin */
+      @font-face {
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Comfortaa Bold"), local("Comfortaa-Bold"),
+          url(/fonts/Comfortaa_lat_700.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
       }
 
-      95% {
-        transform: scale(0.95);
-        opacity: 1;
+      .pulse {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-duration: 7s;
+        -webkit-animation-duration: 7s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+        max-width: 450px;
+        margin: auto;
       }
 
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    @-webkit-keyframes pulse {
-      0% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-      }
-
-      80% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-      }
-
-      85% {
-        -webkit-transform: scale(0.95);
-        opacity: 1;
-      }
-
-      90% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-      }
-
-      95% {
-        -webkit-transform: scale(0.95);
-        opacity: 1;
-      }
-
-      100% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    body {
-      color: #ccc;
-      font-family: "Comfortaa", cursive, Geneva, Arial, sans-serif;
-      background-color: #2d2d2d;
-      display: flex;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    a {
-      text-decoration: none;
-      color: #6fb0f5;
-    }
-
-    a:visited {
-      color: #6fb0f5;
-    }
-
-    a:hover {
-      color: chartreuse;
-    }
-
-    h1 {
-      margin-top: 0px;
-      font-size: 1em;
-      text-align: center;
-    }
-
-    h2 {
-      color: #ffcd00;
-    }
-
-    h3 {
-      margin-top: 0px;
-    }
-
-    .icons {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: flex-start safe;
-    }
-
-    .fullwidth {
-      width: 100%;
-    }
-
-    .butt {
-      background-color: #333;
-      border: 1px solid #6fb0f5;
-      border-radius: 0.5rem;
-      padding: 1rem;
-      margin: 1rem;
-      text-align: center;
-      line-height: 1.7em;
-    }
-
-    .butt:hover {
-      border-color: chartreuse;
-      color: chartreuse;
-    }
-
-    .hello,
-    .icons,
-    .skills,
-    .univer,
-    .proj,
-    .getCV {
-      background-color: #333;
-      border-radius: 0.5rem;
-      padding: 2rem;
-      margin: 1em;
-      max-width: 450px;
-      line-height: 1.7em;
-    }
-
-    .icons {
-      justify-content: center;
-      align-content: center;
-    }
-
-    .icon {
-      width: 4rem;
-      height: 4rem;
-      border: 1px solid #ddd;
-      border-radius: 0.5rem;
-      background-color: #444;
-      margin: 0.2rem;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    }
-
-    .itext {
-      margin: auto;
-      color: #eee;
-      font-size: 0.7em;
-      line-height: 1.2em;
-    }
-
-    .header,
-    .footer {
-      padding: 1em;
-      margin-top: 1rem;
-      text-align: center;
-    }
-
-    .footer a:hover {
-      color: #ffcd00;
-    }
-
-    ul {
-      padding-left: 0.8em;
-    }
-
-    li {
-      margin-bottom: 0.7em;
-    }
-
-    li span {
-      font-weight: bold;
-    }
-    .white {color:white;
-    }
-    
-    .black {
-      background-color: #222;
-      color: #5c7e00;
-    }
-
-    .black a {
-      color: #999600;
-    }
-
-    .ijs {
-      background-color: darkorange;
-    }
-
-    .ir {
-      background-color: #6fb0f5;
-    }
-
-    .its {
-      background-color: #7cb305;
-    }
-
-    .irn {
-      background-color: #05a2a2;
-    }
-
-    .ih {
-      background-color: #d4b106;
-    }
-
-    .ic {
-      background-color: #fa5f14;
-    }
-
-    .ip {
-      background-color: #874da4;
-    }
-
-    .im {
-      background-color: #0074bf;
-    }
-
-    .ig {
-      background-color: #d40251;
-    }
-
-    .ij {
-      background-color: #52c41a;
-    }
-
-    @media screen and (max-device-width: 700px) {
-      html {
-        font-size: 13px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-
-    <div class="header">
-      <div class="pulse">
-        <a href="https://t.me/Vladimir_Matveev_Samara">
-          <div class="butt">
-            <b>Есть предложение?</b><br />
-            Напишите мне в Телеграм ✈️
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="hello">
-      <h1>Привет!<br />Я - Владимир Матвеев, frontend-разработчик</h1>
-      <br />
-      Опыт работы более 15 лет,<br />свой первый сайт на заказ я написал в 2011 году, продолжаю
-      совершенствоваться<br />в&nbsp;веб-разработке.
-    </div>
-
-    <div class="icons">
-      <div class="icon ijs">
-        <div class="itext">Java<br />Script</div>
-      </div>
-      <div class="icon ir">
-        <div class="itext">React JS</div>
-      </div>
-      <div class="icon its">
-        <div class="itext">Type<br />Script</div>
-      </div>
-      <div class="icon irn">
-        <div class="itext">React<br />Native</div>
-      </div>
-      <div class="icon ih">
-        <div class="itext">HTML</div>
-      </div>
-      <div class="icon ic">
-        <div class="itext">CSS</div>
-      </div>
-      <div class="icon ip">
-        <div class="itext">PHP</div>
-      </div>
-      <div class="icon im">
-        <div class="itext">MySQL</div>
-      </div>
-      <div class="icon ig">
-        <div class="itext">GIT</div>
-      </div>
-      <div class="icon ij">
-        <div class="itext">Jest</div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <h3>В КОПИЛКЕ ОПЫТА:</h3>
-      <ul>
-        <li>JS, React, ReactNative, TypeScript, Node.js, CSS, HTML, PHP, MySQL, Jest, Git</li>
-        <li>Разработка <span>ReactJS</span>-приложений</li>
-        <li>
-          <span>Web-разработка, SEO, продвижение</span> (Я.Директ, GAW, VK, …)
-          RealChinaTea.Club - интернет-магазин чая, beHAPPY163.ru, LeMooor.ru,
-          Mariya-Matveeva.ru, ETP-Tula.ru, Elf-clinic.ru, TulaStar.ru, …
-        </li>
-        <li>
-          Разработка и тонкая доводка интернет-магазина (OpenCart)
-          <span>SHTOORM.RU</span><br />
-          - Штурм, экипировочный центр (Самара). Директор. Снаряжение и одежда
-          для гор и города.
-        </li>
-        <li>
-          <span>Русификация/локализация ПО:</span> SalesOnTheMove App,
-          Divi WordPress Theme, …
-        </li>
-        <li>
-          <span>Кроме того:</span> Управление персоналом, частотные преобразователи
-          Danfoss Drives, АСУТП и КИПиА: ТрансНефть, Балтика-Тула, НЛМК
-        </li>
-        <li>
-          <span>Первые шаги:</span> программист центральной библиотеки (СУБД
-          FoxPro)
-        </li>
-      </ul>
-    </div>
-
-    <div class="univer">
-      <ul>
-        <li>
-          <span>Образование:</span> <span class="white">МИРЭА</span> (Московский Институт Радиотехники,
-          Электроники и Автоматики), Управление и&nbspинформатика
-          в&nbspтехнических системах, инженер
-        </li>
-        <li><span>English (Technical):</span> B1</li>
-      </ul>
-    </div>
-
-    <div class="proj">
-      <h3>Примеры с открытым исходным кодом</h3>
-      <ul>
-        <li>
-          <span><a href="https://runcalc-xi.vercel.app/" target="_blank">Математика для бега</a></span> - RunCalc -
-          наглядный расчёт
-          взаимоЗависимостей времени, скорости, каденса и длины шага. <br />
-          <a href="https://github.com/ZarNizza/runcalc" target="_blank">GitHub Repo</a>
-        </li>
-        <li>
-          <span><a href="https://tariffcalc.vercel.app/" target="_blank">Расчёт тарифов</a></span> для сайта путешествий
-          по комплексу
-          параметров. <br />
-          <a href="https://github.com/ZarNizza/tariffcalc" target="_blank">GitHub Repo</a>
-        </li>
-        <li>
-          <span><a href="https://calendar-js-react.vercel.app/" target="_blank">Календарь событий</a></span> на React
-          Hooks c datapicker'ом,
-          свободным форматом ввода события и хранением в LocalStorage. <br />
-          <a href="https://github.com/ZarNizza/Calendar" target="_blank">GitHub Repo</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="getCV">
-      <a href="/CV_MVN163.pdf" target="_blank">Скачать резюме в формате .pdf</a>
-    </div>
-
-    <div class="footer">
-      <div class="pulse">
-        <a href="tel:+79608284337">
-          <div class="butt">
-            ☎ <b>+7 960 828 4337</b> (+ WhatsApp)
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="footer black">
-      * Если вы нашли на этой странице очепятку - <br />прошу
-      <a href="https://t.me/Vladimir_Matveev_Samara" target="_blank">сообщить мне в Телеграм</a>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script>
-    'use strict';
-
-    // If set to true, the user must press
-    // UP UP DOWN ODWN LEFT RIGHT LEFT RIGHT A B
-    // to trigger the confetti with a random color theme.
-    // Otherwise the confetti constantly falls.
-    var onlyOnKonami = false;
-
-    $(function () {
-      // Globals
-      var $window = $(window)
-        , random = Math.random
-        , cos = Math.cos
-        , sin = Math.sin
-        , PI = Math.PI
-        , PI2 = PI * 2
-        , timer = undefined
-        , frame = undefined
-        , confetti = [];
-
-      var runFor = 2000
-      var isRunning = true
-
-      setTimeout(() => {
-        isRunning = false
-      }, runFor);
-
-      // Settings
-      var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-        , pointer = 0;
-
-      var particles = 150
-        , spread = 20
-        , sizeMin = 5
-        , sizeMax = 12 - sizeMin
-        , eccentricity = 10
-        , deviation = 100
-        , dxThetaMin = -.1
-        , dxThetaMax = -dxThetaMin - dxThetaMin
-        , dyMin = .13
-        , dyMax = .18
-        , dThetaMin = .4
-        , dThetaMax = .7 - dThetaMin;
-
-      var colorThemes = [
-        function () {
-          return color(200 * random() | 0, 200 * random() | 0, 200 * random() | 0);
-        }, function () {
-          var black = 200 * random() | 0; return color(200, black, black);
-        }, function () {
-          var black = 200 * random() | 0; return color(black, 200, black);
-        }, function () {
-          var black = 200 * random() | 0; return color(black, black, 200);
-        }, function () {
-          return color(200, 100, 200 * random() | 0);
-        }, function () {
-          return color(200 * random() | 0, 200, 200);
-        }, function () {
-          var black = 256 * random() | 0; return color(black, black, black);
-        }, function () {
-          return colorThemes[random() < .5 ? 1 : 2]();
-        }, function () {
-          return colorThemes[random() < .5 ? 3 : 5]();
-        }, function () {
-          return colorThemes[random() < .5 ? 2 : 4]();
-        }
-      ];
-      function color(r, g, b) {
-        return 'rgb(' + r + ',' + g + ',' + b + ')';
-      }
-
-      // Cosine interpolation
-      function interpolation(a, b, t) {
-        return (1 - cos(PI * t)) / 2 * (b - a) + a;
-      }
-
-      // Create a 1D Maximal Poisson Disc over [0, 1]
-      var radius = 1 / eccentricity, radius2 = radius + radius;
-      function createPoisson() {
-        // domain is the set of points which are still available to pick from
-        // D = union{ [d_i, d_i+1] | i is even }
-        var domain = [radius, 1 - radius], measure = 1 - radius2, spline = [0, 1];
-        while (measure) {
-          var dart = measure * random(), i, l, interval, a, b, c, d;
-
-          // Find where dart lies
-          for (i = 0, l = domain.length, measure = 0; i < l; i += 2) {
-            a = domain[i], b = domain[i + 1], interval = b - a;
-            if (dart < measure + interval) {
-              spline.push(dart += a - measure);
-              break;
-            }
-            measure += interval;
-          }
-          c = dart - radius, d = dart + radius;
-
-          // Update the domain
-          for (i = domain.length - 1; i > 0; i -= 2) {
-            l = i - 1, a = domain[l], b = domain[i];
-            // c---d          c---d  Do nothing
-            //   c-----d  c-----d    Move interior
-            //   c--------------d    Delete interval
-            //         c--d          Split interval
-            //       a------b
-            if (a >= c && a < d)
-              if (b > d) domain[l] = d; // Move interior (Left case)
-              else domain.splice(l, 2); // Delete interval
-            else if (a < c && b > c)
-              if (b <= d) domain[i] = c; // Move interior (Right case)
-              else domain.splice(i, 0, c, d); // Split interval
-          }
-
-          // Re-measure the domain
-          for (i = 0, l = domain.length, measure = 0; i < l; i += 2)
-            measure += domain[i + 1] - domain[i];
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
         }
 
-        return spline.sort();
-      }
+        80% {
+          transform: scale(1);
+          opacity: 1;
+        }
 
-      // Create the overarching container
-      var container = document.createElement('div');
-      container.style.position = 'fixed';
-      container.style.top = '0';
-      container.style.left = '0';
-      container.style.width = '100%';
-      container.style.height = '0';
-      container.style.overflow = 'visible';
-      container.style.zIndex = '9999';
+        85% {
+          transform: scale(0.95);
+          opacity: 1;
+        }
 
-      // Confetto constructor
-      function Confetto(theme) {
-        this.frame = 0;
-        this.outer = document.createElement('div');
-        this.inner = document.createElement('div');
-        this.outer.appendChild(this.inner);
+        90% {
+          transform: scale(1);
+          opacity: 1;
+        }
 
-        var outerStyle = this.outer.style, innerStyle = this.inner.style;
-        outerStyle.position = 'absolute';
-        outerStyle.width = (sizeMin + sizeMax * random()) + 'px';
-        outerStyle.height = (sizeMin + sizeMax * random()) + 'px';
-        innerStyle.width = '100%';
-        innerStyle.height = '100%';
-        innerStyle.backgroundColor = theme();
+        95% {
+          transform: scale(0.95);
+          opacity: 1;
+        }
 
-        outerStyle.perspective = '50px';
-        outerStyle.transform = 'rotate(' + (360 * random()) + 'deg)';
-        this.axis = 'rotate3D(' +
-          cos(360 * random()) + ',' +
-          cos(360 * random()) + ',0,';
-        this.theta = 360 * random();
-        this.dTheta = dThetaMin + dThetaMax * random();
-        innerStyle.transform = this.axis + this.theta + 'deg)';
-
-        this.x = $window.width() * random();
-        this.y = -deviation;
-        this.dx = sin(dxThetaMin + dxThetaMax * random());
-        this.dy = dyMin + dyMax * random();
-        outerStyle.left = this.x + 'px';
-        outerStyle.top = this.y + 'px';
-
-        // Create the periodic spline
-        this.splineX = createPoisson();
-        this.splineY = [];
-        for (var i = 1, l = this.splineX.length - 1; i < l; ++i)
-          this.splineY[i] = deviation * random();
-        this.splineY[0] = this.splineY[l] = deviation * random();
-
-        this.update = function (height, delta) {
-          this.frame += delta;
-          this.x += this.dx * delta;
-          this.y += this.dy * delta;
-          this.theta += this.dTheta * delta;
-
-          // Compute spline and convert to polar
-          var phi = this.frame % 7777 / 7777, i = 0, j = 1;
-          while (phi >= this.splineX[j]) i = j++;
-          var rho = interpolation(
-            this.splineY[i],
-            this.splineY[j],
-            (phi - this.splineX[i]) / (this.splineX[j] - this.splineX[i])
-          );
-          phi *= PI2;
-
-          outerStyle.left = this.x + rho * cos(phi) + 'px';
-          outerStyle.top = this.y + rho * sin(phi) + 'px';
-          innerStyle.transform = this.axis + this.theta + 'deg)';
-          return this.y > height + deviation;
-        };
-      }
-
-
-      function poof() {
-        if (!frame) {
-          // Append the container
-          document.body.appendChild(container);
-
-          // Add confetti
-
-          var theme = colorThemes[onlyOnKonami ? colorThemes.length * random() | 0 : 0]
-            , count = 0;
-
-          (function addConfetto() {
-
-            if (onlyOnKonami && ++count > particles)
-              return timer = undefined;
-
-            if (isRunning) {
-              var confetto = new Confetto(theme);
-              confetti.push(confetto);
-
-              container.appendChild(confetto.outer);
-              timer = setTimeout(addConfetto, spread * random());
-            }
-          })(0);
-
-
-          // Start the loop
-          var prev = undefined;
-          requestAnimationFrame(function loop(timestamp) {
-            var delta = prev ? timestamp - prev : 0;
-            prev = timestamp;
-            var height = $window.height();
-
-            for (var i = confetti.length - 1; i >= 0; --i) {
-              if (confetti[i].update(height, delta)) {
-                container.removeChild(confetti[i].outer);
-                confetti.splice(i, 1);
-              }
-            }
-
-            if (timer || confetti.length)
-              return frame = requestAnimationFrame(loop);
-
-            // Cleanup
-            document.body.removeChild(container);
-            frame = undefined;
-          });
+        100% {
+          transform: scale(1);
+          opacity: 1;
         }
       }
 
-      $window.keydown(function (event) {
-        pointer = konami[pointer] === event.which
-          ? pointer + 1
-          : +(event.which === konami[0]);
-        if (pointer === konami.length) {
+      @-webkit-keyframes pulse {
+        0% {
+          -webkit-transform: scale(1);
+          opacity: 1;
+        }
+
+        80% {
+          -webkit-transform: scale(1);
+          opacity: 1;
+        }
+
+        85% {
+          -webkit-transform: scale(0.95);
+          opacity: 1;
+        }
+
+        90% {
+          -webkit-transform: scale(1);
+          opacity: 1;
+        }
+
+        95% {
+          -webkit-transform: scale(0.95);
+          opacity: 1;
+        }
+
+        100% {
+          -webkit-transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      body {
+        color: #ccc;
+        font-family: "Comfortaa", cursive, Geneva, Arial, sans-serif;
+        background-color: #2d2d2d;
+        display: flex;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: #6fb0f5;
+      }
+
+      a:visited {
+        color: #6fb0f5;
+      }
+
+      a:hover {
+        color: chartreuse;
+      }
+
+      h1 {
+        margin-top: 0px;
+        font-size: 1em;
+        text-align: center;
+      }
+
+      h2 {
+        color: #ffcd00;
+      }
+
+      h3 {
+        margin-top: 0px;
+      }
+
+      .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start safe;
+      }
+
+      .fullwidth {
+        width: 100%;
+      }
+
+      .butt {
+        background-color: #333;
+        border: 1px solid #6fb0f5;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+        line-height: 1.7em;
+      }
+
+      .butt:hover {
+        border-color: chartreuse;
+        color: chartreuse;
+      }
+
+      .hello,
+      .icons,
+      .skills,
+      .univer,
+      .proj,
+      .getCV {
+        background-color: #333;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        margin: 1em;
+        max-width: 450px;
+        line-height: 1.7em;
+      }
+
+      .icons {
+        justify-content: center;
+        align-content: center;
+      }
+
+      .icon {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        background-color: #444;
+        margin: 0.2rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .itext {
+        margin: auto;
+        color: #eee;
+        font-size: 0.7em;
+        line-height: 1.2em;
+      }
+
+      .header,
+      .footer {
+        padding: 1em;
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      .footer a:hover {
+        color: #ffcd00;
+      }
+
+      ul {
+        padding-left: 0.8em;
+      }
+
+      li {
+        margin-bottom: 0.7em;
+      }
+
+      li span {
+        font-weight: bold;
+      }
+      .white {
+        color: white;
+      }
+
+      .black {
+        background-color: #222;
+        color: #5c7e00;
+      }
+
+      .black a {
+        color: #999600;
+      }
+
+      .ijs {
+        background-color: darkorange;
+      }
+
+      .ir {
+        background-color: #6fb0f5;
+      }
+
+      .its {
+        background-color: #7cb305;
+      }
+
+      .irn {
+        background-color: #05a2a2;
+      }
+
+      .ih {
+        background-color: #d4b106;
+      }
+
+      .ic {
+        background-color: #fa5f14;
+      }
+
+      .ip {
+        background-color: #874da4;
+      }
+
+      .im {
+        background-color: #0074bf;
+      }
+
+      .ig {
+        background-color: #d40251;
+      }
+
+      .ij {
+        background-color: #52c41a;
+      }
+
+      @media screen and (max-device-width: 700px) {
+        html {
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="pulse">
+          <a href="https://t.me/Vladimir_Matveev_Samara">
+            <div class="butt">
+              <b>Есть предложение?</b><br />
+              Напишите мне в Телеграм ✈️
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hello">
+        <h1>Привет!<br />Я - Владимир Матвеев, frontend-разработчик</h1>
+        <br />
+        <p>
+          Опыт работы более 15 лет,<br />свой первый сайт на заказ я написал в
+          2011 году, продолжаю совершенствоваться<br />в&nbsp;веб-разработке.
+        </p>
+        <p>
+          Открыт для новых концепций и технологий, практикую сочетание "чистого
+          листа" со "старыми дрожжами". Пользуюсь DRY, KISS и уважаю Оккама.
+        </p>
+        <p>Предпочитаю удобное, лёгкое, быстрое, яркое, вкусное.</p>
+        <p>
+          "Галеры" и оплату менее 120k не рассматриваю.<br />Приветствую
+          испытательный срок и наставничество.
+        </p>
+      </div>
+
+      <div class="icons">
+        <div class="icon ijs">
+          <div class="itext">Java<br />Script</div>
+        </div>
+        <div class="icon ir">
+          <div class="itext">React JS</div>
+        </div>
+        <div class="icon its">
+          <div class="itext">Type<br />Script</div>
+        </div>
+        <div class="icon irn">
+          <div class="itext">React<br />Native</div>
+        </div>
+        <div class="icon ih">
+          <div class="itext">HTML</div>
+        </div>
+        <div class="icon ic">
+          <div class="itext">CSS</div>
+        </div>
+        <div class="icon ip">
+          <div class="itext">PHP</div>
+        </div>
+        <div class="icon im">
+          <div class="itext">MySQL</div>
+        </div>
+        <div class="icon ig">
+          <div class="itext">GIT</div>
+        </div>
+        <div class="icon ij">
+          <div class="itext">Jest</div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h3>В КОПИЛКЕ ОПЫТА:</h3>
+        <ul>
+          <li>
+            JS, React, ReactNative, TypeScript, Node.js, CSS, HTML, PHP, MySQL,
+            Jest, Git
+          </li>
+          <li>Разработка <span>ReactJS</span>-приложений</li>
+          <li>
+            <span>Web-разработка, SEO, продвижение</span> (Я.Директ, GAW, VK, …)
+            RealChinaTea.Club - интернет-магазин чая, beHAPPY163.ru, LeMooor.ru,
+            Mariya-Matveeva.ru, ETP-Tula.ru, Elf-clinic.ru, TulaStar.ru, …
+          </li>
+          <li>
+            Разработка и тонкая доводка интернет-магазина (OpenCart)
+            <span>SHTOORM.RU</span><br />
+            - Штурм, экипировочный центр (Самара). Директор. Снаряжение и одежда
+            для гор и города
+          </li>
+          <li>
+            <span>Русификация/локализация ПО:</span> SalesOnTheMove App, Divi
+            WordPress Theme, …
+          </li>
+          <li>
+            <span>Кроме того:</span> Управление персоналом, силовая электроника
+            Danfoss Drives, АСУТП и КИПиА (ТрансНефть, Балтика-Тула, НЛМК)
+          </li>
+          <li>
+            <span>Первые шаги:</span> программист центральной библиотеки (СУБД
+            FoxPro)
+          </li>
+        </ul>
+      </div>
+
+      <div class="univer">
+        <ul>
+          <li>
+            <span>Образование:</span>
+            <span class="white">МИРЭА</span> (Московский Институт Радиотехники,
+            Электроники и Автоматики), Управление и&nbspинформатика
+            в&nbspтехнических системах, инженер
+          </li>
+          <li><span>English (Technical):</span> B1</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <h3>Примеры с открытым исходным кодом</h3>
+        <ul>
+          <li>
+            <span
+              ><a href="https://runcalc-xi.vercel.app/" target="_blank"
+                >Математика для бега</a
+              ></span
+            >
+            - RunCalc - наглядный расчёт взаимоЗависимостей времени, скорости,
+            каденса и длины шага. <br />
+            <a href="https://github.com/ZarNizza/runcalc" target="_blank"
+              >GitHub Repo</a
+            >
+          </li>
+          <li>
+            <span
+              ><a href="https://tariffcalc.vercel.app/" target="_blank"
+                >Расчёт тарифов</a
+              ></span
+            >
+            для сайта путешествий по комплексу параметров. <br />
+            <a href="https://github.com/ZarNizza/tariffcalc" target="_blank"
+              >GitHub Repo</a
+            >
+          </li>
+          <li>
+            <span
+              ><a href="https://calendar-js-react.vercel.app/" target="_blank"
+                >Календарь событий</a
+              ></span
+            >
+            на React Hooks c datapicker'ом, свободным форматом ввода события и
+            хранением в LocalStorage. <br />
+            <a href="https://github.com/ZarNizza/Calendar" target="_blank"
+              >GitHub Repo</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="getCV">
+        <a href="/CV_MVN163.pdf" target="_blank"
+          >Скачать резюме в формате .pdf</a
+        >
+      </div>
+
+      <div class="footer">
+        <div class="pulse">
+          <a href="tel:+79608284337">
+            <div class="butt">☎ <b>+7 960 828 4337</b> (+ WhatsApp)</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer black">
+        * Если вы нашли на этой странице очепятку - <br />прошу
+        <a href="https://t.me/Vladimir_Matveev_Samara" target="_blank"
+          >сообщить мне в Телеграм</a
+        >
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+      "use strict";
+
+      // If set to true, the user must press
+      // UP UP DOWN ODWN LEFT RIGHT LEFT RIGHT A B
+      // to trigger the confetti with a random color theme.
+      // Otherwise the confetti constantly falls.
+      var onlyOnKonami = false;
+
+      $(function () {
+        // Globals
+        var $window = $(window),
+          random = Math.random,
+          cos = Math.cos,
+          sin = Math.sin,
+          PI = Math.PI,
+          PI2 = PI * 2,
+          timer = undefined,
+          frame = undefined,
+          confetti = [];
+
+        var runFor = 2000;
+        var isRunning = true;
+
+        setTimeout(() => {
+          isRunning = false;
+        }, runFor);
+
+        // Settings
+        var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
           pointer = 0;
-          poof();
+
+        var particles = 150,
+          spread = 20,
+          sizeMin = 5,
+          sizeMax = 12 - sizeMin,
+          eccentricity = 10,
+          deviation = 100,
+          dxThetaMin = -0.1,
+          dxThetaMax = -dxThetaMin - dxThetaMin,
+          dyMin = 0.13,
+          dyMax = 0.18,
+          dThetaMin = 0.4,
+          dThetaMax = 0.7 - dThetaMin;
+
+        var colorThemes = [
+          function () {
+            return color(
+              (200 * random()) | 0,
+              (200 * random()) | 0,
+              (200 * random()) | 0
+            );
+          },
+          function () {
+            var black = (200 * random()) | 0;
+            return color(200, black, black);
+          },
+          function () {
+            var black = (200 * random()) | 0;
+            return color(black, 200, black);
+          },
+          function () {
+            var black = (200 * random()) | 0;
+            return color(black, black, 200);
+          },
+          function () {
+            return color(200, 100, (200 * random()) | 0);
+          },
+          function () {
+            return color((200 * random()) | 0, 200, 200);
+          },
+          function () {
+            var black = (256 * random()) | 0;
+            return color(black, black, black);
+          },
+          function () {
+            return colorThemes[random() < 0.5 ? 1 : 2]();
+          },
+          function () {
+            return colorThemes[random() < 0.5 ? 3 : 5]();
+          },
+          function () {
+            return colorThemes[random() < 0.5 ? 2 : 4]();
+          },
+        ];
+        function color(r, g, b) {
+          return "rgb(" + r + "," + g + "," + b + ")";
         }
+
+        // Cosine interpolation
+        function interpolation(a, b, t) {
+          return ((1 - cos(PI * t)) / 2) * (b - a) + a;
+        }
+
+        // Create a 1D Maximal Poisson Disc over [0, 1]
+        var radius = 1 / eccentricity,
+          radius2 = radius + radius;
+        function createPoisson() {
+          // domain is the set of points which are still available to pick from
+          // D = union{ [d_i, d_i+1] | i is even }
+          var domain = [radius, 1 - radius],
+            measure = 1 - radius2,
+            spline = [0, 1];
+          while (measure) {
+            var dart = measure * random(),
+              i,
+              l,
+              interval,
+              a,
+              b,
+              c,
+              d;
+
+            // Find where dart lies
+            for (i = 0, l = domain.length, measure = 0; i < l; i += 2) {
+              (a = domain[i]), (b = domain[i + 1]), (interval = b - a);
+              if (dart < measure + interval) {
+                spline.push((dart += a - measure));
+                break;
+              }
+              measure += interval;
+            }
+            (c = dart - radius), (d = dart + radius);
+
+            // Update the domain
+            for (i = domain.length - 1; i > 0; i -= 2) {
+              (l = i - 1), (a = domain[l]), (b = domain[i]);
+              // c---d          c---d  Do nothing
+              //   c-----d  c-----d    Move interior
+              //   c--------------d    Delete interval
+              //         c--d          Split interval
+              //       a------b
+              if (a >= c && a < d)
+                if (b > d) domain[l] = d;
+                // Move interior (Left case)
+                else domain.splice(l, 2);
+              // Delete interval
+              else if (a < c && b > c)
+                if (b <= d) domain[i] = c;
+                // Move interior (Right case)
+                else domain.splice(i, 0, c, d); // Split interval
+            }
+
+            // Re-measure the domain
+            for (i = 0, l = domain.length, measure = 0; i < l; i += 2)
+              measure += domain[i + 1] - domain[i];
+          }
+
+          return spline.sort();
+        }
+
+        // Create the overarching container
+        var container = document.createElement("div");
+        container.style.position = "fixed";
+        container.style.top = "0";
+        container.style.left = "0";
+        container.style.width = "100%";
+        container.style.height = "0";
+        container.style.overflow = "visible";
+        container.style.zIndex = "9999";
+
+        // Confetto constructor
+        function Confetto(theme) {
+          this.frame = 0;
+          this.outer = document.createElement("div");
+          this.inner = document.createElement("div");
+          this.outer.appendChild(this.inner);
+
+          var outerStyle = this.outer.style,
+            innerStyle = this.inner.style;
+          outerStyle.position = "absolute";
+          outerStyle.width = sizeMin + sizeMax * random() + "px";
+          outerStyle.height = sizeMin + sizeMax * random() + "px";
+          innerStyle.width = "100%";
+          innerStyle.height = "100%";
+          innerStyle.backgroundColor = theme();
+
+          outerStyle.perspective = "50px";
+          outerStyle.transform = "rotate(" + 360 * random() + "deg)";
+          this.axis =
+            "rotate3D(" +
+            cos(360 * random()) +
+            "," +
+            cos(360 * random()) +
+            ",0,";
+          this.theta = 360 * random();
+          this.dTheta = dThetaMin + dThetaMax * random();
+          innerStyle.transform = this.axis + this.theta + "deg)";
+
+          this.x = $window.width() * random();
+          this.y = -deviation;
+          this.dx = sin(dxThetaMin + dxThetaMax * random());
+          this.dy = dyMin + dyMax * random();
+          outerStyle.left = this.x + "px";
+          outerStyle.top = this.y + "px";
+
+          // Create the periodic spline
+          this.splineX = createPoisson();
+          this.splineY = [];
+          for (var i = 1, l = this.splineX.length - 1; i < l; ++i)
+            this.splineY[i] = deviation * random();
+          this.splineY[0] = this.splineY[l] = deviation * random();
+
+          this.update = function (height, delta) {
+            this.frame += delta;
+            this.x += this.dx * delta;
+            this.y += this.dy * delta;
+            this.theta += this.dTheta * delta;
+
+            // Compute spline and convert to polar
+            var phi = (this.frame % 7777) / 7777,
+              i = 0,
+              j = 1;
+            while (phi >= this.splineX[j]) i = j++;
+            var rho = interpolation(
+              this.splineY[i],
+              this.splineY[j],
+              (phi - this.splineX[i]) / (this.splineX[j] - this.splineX[i])
+            );
+            phi *= PI2;
+
+            outerStyle.left = this.x + rho * cos(phi) + "px";
+            outerStyle.top = this.y + rho * sin(phi) + "px";
+            innerStyle.transform = this.axis + this.theta + "deg)";
+            return this.y > height + deviation;
+          };
+        }
+
+        function poof() {
+          if (!frame) {
+            // Append the container
+            document.body.appendChild(container);
+
+            // Add confetti
+
+            var theme =
+                colorThemes[
+                  onlyOnKonami ? (colorThemes.length * random()) | 0 : 0
+                ],
+              count = 0;
+
+            (function addConfetto() {
+              if (onlyOnKonami && ++count > particles)
+                return (timer = undefined);
+
+              if (isRunning) {
+                var confetto = new Confetto(theme);
+                confetti.push(confetto);
+
+                container.appendChild(confetto.outer);
+                timer = setTimeout(addConfetto, spread * random());
+              }
+            })(0);
+
+            // Start the loop
+            var prev = undefined;
+            requestAnimationFrame(function loop(timestamp) {
+              var delta = prev ? timestamp - prev : 0;
+              prev = timestamp;
+              var height = $window.height();
+
+              for (var i = confetti.length - 1; i >= 0; --i) {
+                if (confetti[i].update(height, delta)) {
+                  container.removeChild(confetti[i].outer);
+                  confetti.splice(i, 1);
+                }
+              }
+
+              if (timer || confetti.length)
+                return (frame = requestAnimationFrame(loop));
+
+              // Cleanup
+              document.body.removeChild(container);
+              frame = undefined;
+            });
+          }
+        }
+
+        $window.keydown(function (event) {
+          pointer =
+            konami[pointer] === event.which
+              ? pointer + 1
+              : +(event.which === konami[0]);
+          if (pointer === konami.length) {
+            pointer = 0;
+            poof();
+          }
+        });
+
+        poof();
       });
-
-      poof();
-    });
-
-  </script>
-  <!-- <script async>
+    </script>
+    <!-- <script async>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -741,8 +819,8 @@
      ga('send', 'event', 'Новый посетитель', location.pathname);
      }, 15000);
     </script> -->
-  <!-- Yandex.Metrika counter -->
-  <!-- <script type="text/javascript" async>
+    <!-- Yandex.Metrika counter -->
+    <!-- <script type="text/javascript" async>
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
@@ -755,20 +833,19 @@
                     });
                 } catch(e) { }
             });
-    
+
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
                 f = function () { n.parentNode.insertBefore(s, n); };
             s.type = "text/javascript";
             s.async = true;
             s.src = "https://mc.yandex.ru/metrika/watch.js";
-    
+
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
             } else { f(); }
         })(document, window, "yandex_metrika_callbacks");
     </script> -->
-  <!-- /Yandex.Metrika counter -->
-</body>
-
+    <!-- /Yandex.Metrika counter -->
+  </body>
 </html>
